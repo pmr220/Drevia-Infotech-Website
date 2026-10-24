@@ -13,20 +13,20 @@ el.innerHTML='<div class="dm-b"><button class="dm-x" type="button" aria-label="C
 '<button class="dm-go" type="submit">Book my free demo</button><p class="dm-n">We confirm your slot by phone or email.</p><p class="dm-n" id="dme" hidden style="color:#d92d4a">Sorry, we could not send this right now. Please call 73875 70803 or email dreviainfotech@gmail.com.</p></form>'+
 '<div id="dmok" hidden><div class="dm-ck"><svg viewBox="0 0 56 56" fill="none" stroke="#22c55e" stroke-width="3" stroke-linecap="round"><circle cx="28" cy="28" r="26"/><path d="m16 29 8 8 16-18"/></svg></div><h3>Demo request sent</h3><p>Thank you. We have received your request and will confirm your slot shortly. For anything urgent, call 73875 70803.</p><button class="dm-go" type="button" id="dmc">Close</button></div></div>';
 document.body.appendChild(el);
-var last;
-function open(){last=document.activeElement;el.hidden=false;document.body.style.overflow='hidden';requestAnimationFrame(function(){el.classList.add('on');document.getElementById('dn').focus({preventScroll:true})})}
+var last,product="CRM";
+function open(which){product=which==="DigiClasss"?"DigiClasss":"CRM";document.getElementById("dmt").textContent="Book a Free "+product+" Demo";el.querySelector(".dm-s").textContent=product+" Software by Drevia Infotech";last=document.activeElement;el.hidden=false;document.body.style.overflow='hidden';requestAnimationFrame(function(){el.classList.add('on');document.getElementById('dn').focus({preventScroll:true})})}
 function close(){el.classList.remove('on');document.body.style.overflow='';setTimeout(function(){el.hidden=true;document.getElementById('dmf').hidden=false;document.getElementById('dmok').hidden=true},300);if(last&&last.focus)last.focus()}
-document.addEventListener('click',function(e){var t=e.target.closest('[data-demo]');if(t){e.preventDefault();open()}if(e.target===el||e.target.closest('.dm-x')||e.target.id==='dmc')close()});
+document.addEventListener('click',function(e){var t=e.target.closest('[data-demo]');if(t){e.preventDefault();open(t.getAttribute("data-demo-product"))}if(e.target===el||e.target.closest('.dm-x')||e.target.id==='dmc')close()});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!el.hidden)close()});
 var f=document.getElementById('dmf');
 f.addEventListener('submit',function(e){e.preventDefault();var g=function(i){return document.getElementById(i).value.trim()};
  var okn=g('dn').length>1,okp=/^[+\d][\d\s-]{8,14}$/.test(g('dp'));
  document.getElementById('dn').parentNode.classList.toggle('bad',!okn);document.getElementById('dp').parentNode.classList.toggle('bad',!okp);
  if(!(okn&&okp)){document.querySelector('#dmf .bad input').focus();return}
- var data={Name:g('dn'),Phone:g('dp'),Email:g('de')||'Not given',Preferred_time:g('dt')||'Any time between 9 AM and 8:30 PM',Request:'Free CRM demo'};
+ var data={Name:g('dn'),Phone:g('dp'),Email:g('de')||'Not given',Preferred_time:g('dt')||'Any time between 9 AM and 8:30 PM',Request:'Free '+product+' demo'};
  if(g('de'))data.email=g('de');
  var go=f.querySelector('.dm-go'),dme=document.getElementById('dme');dme.hidden=true;go.disabled=true;var tx=go.textContent;go.textContent='Sending...';
- drSend(data,'Free CRM demo request: '+g('dn')).then(function(){f.hidden=true;document.getElementById('dmok').hidden=false}).catch(function(){dme.hidden=false}).finally(function(){go.disabled=false;go.textContent=tx})
+ drSend(data,'Free '+product+' demo request: '+g('dn')).then(function(){f.hidden=true;document.getElementById('dmok').hidden=false}).catch(function(){dme.hidden=false}).finally(function(){go.disabled=false;go.textContent=tx})
 });
-if(location.hash==='#demo')setTimeout(open,3500);
+if(location.hash==='#demo')setTimeout(function(){open('CRM')},3500);
 })();
