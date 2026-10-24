@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Contact Us | Drevia Infotech, Amravati</title><meta name="description" content="Contact Drevia Infotech in Amravati. Call us on 7387570803 or send an enquiry about apps, ERP, websites or marketing.">
+<meta name="theme-color" content="#070d33"><link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Lora:ital,wght@1,400;1,500&family=Syne:wght@600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Unbounded:wght@400;600;800&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Space+Grotesk:wght@400;500;700&family=Outfit:wght@400;500;600;800&family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@500;700;800&family=DM+Serif+Display&family=Sora:wght@500;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/base.css">
+<style>
+body.contact{--bg:#ffffff;--fg:#0b1550;--acc:#2447d6;--muted:#55608f;--line:rgba(11,21,80,.14);--disp:'Outfit',sans-serif}
+.contact #glow{display:none}
+body.contact .nav{background:rgba(18,51,201,.92);backdrop-filter:blur(14px)}
+body.contact{--navc:#dbe6ff;--navh:#fff;--navpill:rgba(255,255,255,.16);--brandc:#fff;--brandc2:#cfe0ff}
+body.contact .nav .lm{filter:brightness(0) invert(1)}
+body.contact .burger{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3)}body.contact .burger i{background:#fff}
+.ct{display:grid;grid-template-columns:1fr 1.1fr;min-height:100svh}
+.ct-l{background:#1233c9;color:#fff;padding:calc(var(--ribbon) + var(--nav) + 50px) clamp(24px,5vw,70px) 60px;position:relative;overflow:hidden}
+.ct-l::before,.ct-l::after{content:"";position:absolute;border-radius:50%;filter:blur(70px)}
+.ct-l::before{width:420px;height:420px;background:#6f3bff;right:-120px;top:-60px;animation:fl2 9s ease-in-out infinite alternate}
+.ct-l::after{width:380px;height:380px;background:#00c2e0;left:-100px;bottom:-80px;animation:fl2 11s ease-in-out infinite alternate-reverse}
+@keyframes fl2{to{transform:translate(50px,40px) scale(1.2)}}
+.ct-l>*{position:relative;z-index:2}
+.ct-l h1{font-size:clamp(40px,6vw,86px);font-weight:800;letter-spacing:-.045em;line-height:.95}
+.ct-l p{font-size:18px;opacity:.85;max-width:420px}
+.line{display:flex;gap:16px;align-items:center;padding:18px 20px;border-radius:22px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(10px);margin-top:14px;transition:.3s}
+.line:hover{background:rgba(255,255,255,.22);transform:translateX(8px)}
+.line .ic{width:48px;height:48px;border-radius:15px;background:#fff;color:#1233c9;display:grid;place-items:center;font-size:22px;flex:none}
+.line small{display:block;opacity:.75;font-size:13px}.line b{font-size:19px}
+.mapc{margin-top:26px;border-radius:26px;overflow:hidden;position:relative;height:200px;background:#0c26a0;border:1px solid rgba(255,255,255,.2)}
+.mapc svg{position:absolute;inset:0;width:100%;height:100%}
+.mapc .pin{position:absolute;left:50%;top:50%;width:18px;height:18px;margin:-9px;border-radius:50%;background:#fff}
+.mapc .pin::before,.mapc .pin::after{content:"";position:absolute;inset:-8px;border-radius:50%;border:2px solid #fff;animation:ping 2.4s infinite}
+.mapc .pin::after{animation-delay:1.2s}
+.mapc span{position:absolute;left:18px;bottom:14px;font-weight:600}
+.ct-r{padding:calc(var(--ribbon) + var(--nav) + 50px) clamp(24px,5vw,80px) 60px;display:flex;align-items:center;background:linear-gradient(180deg,#fff,#f1f4ff)}
+form{width:100%;max-width:620px;margin:auto}
+form h2{font-size:clamp(30px,3.6vw,46px);font-weight:800;margin-bottom:6px}
+.f{position:relative;margin-top:22px}
+.f input,.f textarea{width:100%;padding:22px 18px 10px;border-radius:16px;border:1.5px solid var(--line);background:#fff;outline:0;transition:.25s;font-size:16px}
+.f textarea{min-height:130px;resize:vertical}
+.f label{position:absolute;left:18px;top:16px;color:#7a84ae;pointer-events:none;transition:.25s;font-size:15px}
+.f input:focus,.f textarea:focus{border-color:#2447d6;box-shadow:0 0 0 5px rgba(36,71,214,.12)}
+.f input:focus+label,.f input:not(:placeholder-shown)+label,.f textarea:focus+label,.f textarea:not(:placeholder-shown)+label{top:6px;font-size:11.5px;color:#2447d6;font-weight:600}
+.f.bad input,.f.bad textarea{border-color:#d92d4a}.f .err{display:none;color:#d92d4a;font-size:12.5px;margin:4px 6px 0}.f.bad .err{display:block}
+fieldset{border:0;padding:0;margin:26px 0 0}
+legend{font-weight:600;margin-bottom:10px;font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips input{position:absolute;opacity:0}
+.chips label{padding:9px 16px;border-radius:99px;border:1.5px solid var(--line);background:#fff;cursor:pointer;font-size:14px;font-weight:500;transition:.25s;user-select:none}
+.chips label:hover{border-color:#2447d6}
+.chips input:checked+label{background:#2447d6;color:#fff;border-color:#2447d6;transform:scale(1.04)}
+.chips input:focus-visible+label{outline:2px solid #2447d6;outline-offset:2px}
+.sub{margin-top:28px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.contact .btn.p{--btnbg:linear-gradient(135deg,#1233c9,#6f3bff);padding:16px 32px;font-size:16px}
+.note{font-size:13px;color:var(--muted);margin-top:14px}
+.ok{display:none;text-align:center;padding:40px 10px}
+.ok.show{display:block;animation:pop .6s cubic-bezier(.2,1.3,.4,1)}
+@keyframes pop{from{opacity:0;transform:scale(.8)}}
+.ok svg{width:96px;height:96px}.ok circle{stroke-dasharray:166;stroke-dashoffset:166;animation:ck 1s .1s forwards}.ok path{stroke-dasharray:50;stroke-dashoffset:50;animation:ck .6s .8s forwards}
+@keyframes ck{to{stroke-dashoffset:0}}
+@media (max-width:900px){.ct{grid-template-columns:1fr}.ct-l{padding-bottom:40px}.mapc{height:160px}}
+</style></head>
+<body class="contact light loading">
+<div id="loader" aria-label="Loading Drevia Infotech">
+<div class="aur"></div><div class="panel t"></div><div class="panel b"></div><div class="lg-sweep"></div>
+<div class="core">
+ <div class="lg-mark"><svg viewBox="0 0 132 132"><defs><linearGradient id="lgg" x1="0" x2="1"><stop offset="0" stop-color="#5b8cff"/><stop offset=".6" stop-color="#b18cff"/><stop offset="1" stop-color="#5bffd1"/></linearGradient></defs><circle class="c1" cx="66" cy="66" r="60"/><circle class="c2" cx="66" cy="66" r="60"/></svg><img src="assets/logo-mark-white.svg" alt="Drevia Infotech logo"></div>
+ <div class="lg-name" data-lg><span class="ch" style="--k:0">D</span><span class="ch" style="--k:1">r</span><span class="ch" style="--k:2">e</span><span class="ch" style="--k:3">v</span><span class="ch" style="--k:4">i</span><span class="ch" style="--k:5">a</span> <em><span class="ch" style="--k:7">I</span><span class="ch" style="--k:8">n</span><span class="ch" style="--k:9">f</span><span class="ch" style="--k:10">o</span><span class="ch" style="--k:11">t</span><span class="ch" style="--k:12">e</span><span class="ch" style="--k:13">c</span><span class="ch" style="--k:14">h</span></em></div>
+ <div class="lg-tag">INNOVATING THE DIGITAL FUTURE</div>
+ <div class="lg-bar"><i></i></div><div class="lg-pct">0%</div>
+</div></div><div class="progress"></div><div id="glow"></div><header class="nav"><div class="wrap">
+<a class="brand" href="index.html" aria-label="Drevia Infotech home"><img src="assets/logo-mark.svg" alt="" class="lm"><div>Drevia <span>Infotech</span></div></a>
+<nav class="links" aria-label="Main"><a class="l" href="index.html">Home</a><a class="l" href="services.html">Our Services</a><a class="l" href="work.html">Our Work</a><a class="l" href="about.html">About</a><a class="l on" href="contact.html">Contact</a>
+<div class="cta-wrap"><button class="cta" aria-haspopup="true" aria-expanded="false">Solutions <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+<div class="menu" role="menu"><a href="drevia-crm.html"><span class="ic" style="background:rgba(244,114,182,.18)">🎯</span><span><b>Drevia CRM</b><small>Leads, follow-ups and pipeline for every industry</small></span></a><a href="drevia-erp.html"><span class="ic" style="background:rgba(52,211,153,.18)">📊</span><span><b>Drevia ERP</b><small>Billing, stock, HR and reports in one system</small></span></a><a href="digiclasss.html"><span class="ic" style="background:rgba(45,212,191,.18)">🎓</span><span><b>DigiClasss</b><small>One app for institutes, teachers, students, parents</small></span></a><a href="readmynotes.html"><span class="ic" style="background:rgba(250,204,21,.18)">📚</span><span><b>ReadMyNotes</b><small>University-wise notes, papers and material</small></span></a><a class="all" href="solutions.html">See all solutions overview</a></div></div></nav>
+<button class="burger" aria-label="Open menu"><i></i><i></i><i></i></button></div></header>
+<div class="drawer" aria-label="Mobile menu"><a href="index.html">Home</a><a href="services.html">Our Services</a><a href="work.html">Our Work</a><a href="about.html">About</a><a href="contact.html">Contact</a><small>Solutions</small><a class="s" href="solutions.html">All solutions</a><a class="s" href="digiclasss.html">DigiClasss</a><a class="s" href="readmynotes.html">ReadMyNotes</a><a class="s" href="drevia-crm.html">Drevia CRM</a><a class="s" href="drevia-erp.html">Drevia ERP</a><a href="https://wa.me/917387570803" style="color:#7dffb0;font-size:18px;margin-top:20px">WhatsApp us: 73875 70803</a></div>
+<main>
+<div class="ct">
+<section class="ct-l"><h1 data-split>Let's talk about your business.</h1>
+<p data-r="blur" style="--d:.6s">Tell us what slows you down. We will reply with how software can fix it.</p>
+<a class="line" href="tel:+917387570803" data-r="left" style="--d:.2s"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span><small>Call us</small><b>73875 70803</b></span></a>
+<a class="line" href="https://wa.me/917387570803" data-r="left" style="--d:.3s"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-3.8-.9L3 20l1.1-4.9A8.4 8.4 0 1 1 21 11.5z"/></svg></span><span><small>Chat on WhatsApp</small><b>Message us</b></span></a>
+<div class="line" data-r="left" style="--d:.4s"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span><small>Based in</small><b>Amravati, Maharashtra</b></span></div>
+<div class="mapc" id="map" data-r="zoom" style="--d:.5s"><svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice"><g stroke="rgba(255,255,255,.18)" fill="none"><path d="M0 60 Q100 40 200 80 T400 70"/><path d="M0 140 Q120 160 220 120 T400 150"/><path d="M80 0 Q100 100 60 200"/><path d="M250 0 Q270 90 330 200"/><circle cx="200" cy="100" r="46"/><circle cx="200" cy="100" r="90"/></g></svg><div class="pin"></div><span>Amravati</span></div>
+</section>
+<section class="ct-r"><form id="f" novalidate data-r="right"><div id="fm"><h2>Send us your enquiry</h2><p class="muted" style="margin:0">Takes under a minute. We usually respond the same day.</p>
+<div class="f"><input id="n" placeholder=" " autocomplete="name" required><label for="n">Your name</label><div class="err">Please enter your name.</div></div>
+<div class="f"><input id="p" type="tel" placeholder=" " autocomplete="tel" inputmode="tel" required><label for="p">Phone number</label><div class="err">Enter a valid 10-digit phone number.</div></div>
+<div class="f"><input id="e" type="email" placeholder=" " autocomplete="email"><label for="e">Email (optional)</label></div>
+<fieldset><legend>What do you need?</legend><div class="chips">
+<span><input type="checkbox" id="c1" value="Mobile app"><label for="c1">Mobile app</label></span><span><input type="checkbox" id="c2" value="ERP / CRM"><label for="c2">ERP and CRM</label></span><span><input type="checkbox" id="c3" value="Website"><label for="c3">Website</label></span><span><input type="checkbox" id="c4" value="Digital marketing"><label for="c4">Digital marketing</label></span><span><input type="checkbox" id="c6" value="DigiClasss"><label for="c6">DigiClasss</label></span><span><input type="checkbox" id="c7" value="ReadMyNotes"><label for="c7">ReadMyNotes</label></span></div></fieldset>
+<div class="f"><textarea id="m" placeholder=" " required></textarea><label for="m">Tell us about your business and the problem</label><div class="err">Add a few words about what you need.</div></div>
+<div class="sub"><button class="btn p" type="submit" data-mag>Send enquiry</button><a class="btn g" style="color:#0b1550" href="tel:+917387570803">Or call now</a></div>
+<p class="note">We reply by email or phone, usually the same day.</p><p class="note" id="se" hidden style="color:#d92d4a">Sorry, we could not send your enquiry right now. Please call 73875 70803 or email dreviainfotech@gmail.com.</p></div>
+<div class="ok" id="ok"><svg viewBox="0 0 56 56" fill="none" stroke="#1fb855" stroke-width="3" stroke-linecap="round"><circle cx="28" cy="28" r="26"/><path d="m16 29 8 8 16-18"/></svg><h2>Enquiry sent</h2><p class="muted">Thank you. We have received your enquiry and will get back to you shortly. For anything urgent, call 73875 70803.</p><button class="btn g" type="button" id="again" style="color:#0b1550">Write another</button></div></form></section></div>
+</main>
+<footer class="ft"><div class="wrap">
+<div class="fgrid"><div><a class="brand" href="index.html" style="color:#fff"><img src="assets/logo-mark-white.svg" alt=""><div>Drevia <span>Infotech</span></div></a>
+<p style="margin:16px 0 0;max-width:300px;color:#9fb0ee;font-size:14px">Software and digital growth, built around your business.<br>Based in Amravati, Maharashtra.</p></div>
+<div><h5>Pages</h5><a href="index.html">Home</a><a href="services.html">Our Services</a><a href="work.html">Our Work</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><div><h5>Solutions</h5><a href="solutions.html">Overview</a><a href="digiclasss.html">DigiClasss</a><a href="readmynotes.html">ReadMyNotes</a><a href="drevia-crm.html">Drevia CRM</a><a href="drevia-erp.html">Drevia ERP</a></div>
+<div><h5>Talk to us</h5><a href="tel:+917387570803">73875 70803</a><a href="https://wa.me/917387570803">WhatsApp</a><a href="contact.html">Send an enquiry</a><a href="contact.html#map">Amravati, India</a></div></div>
+<div class="big" aria-hidden="true">DREVIA</div>
+<div class="fbot"><span>© 2026 Drevia Infotech. Innovating the Digital Future.</span></div></div></footer>
+<div class="fab"><a class="wa" href="https://wa.me/917387570803" aria-label="WhatsApp Drevia Infotech"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.3L2 22l4.8-1.2A11 11 0 1 0 20.5 3.5zm-8.4 17a9 9 0 0 1-4.6-1.3l-.3-.2-2.8.7.8-2.7-.2-.3a9 9 0 1 1 7.1 3.8zm5-6.7c-.3-.1-1.6-.8-1.8-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.3 7.3 0 0 1-3.6-3.1c-.3-.5.3-.4.8-1.4a.5.5 0 0 0 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.800 11.800 0 0 0 4.500 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.6-.3z"/></svg></a>
+<a class="ph" href="tel:+917387570803" aria-label="Call Drevia Infotech"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.1 1 .4 1.900.7 2.800a2 2 0 0 1-.5 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.4c.9.3 1.800.6 2.800.7a2 2 0 0 1 1.700 2z"/></svg></a></div>
+<script src="js/main.js"></script>
+<script>
+const f=document.getElementById('f'),btn=f.querySelector('button[type=submit]'),se=document.getElementById('se');
+function chk(id,fn){const el=document.getElementById(id),w=el.closest('.f'),ok=fn(el.value.trim());w.classList.toggle('bad',!ok);return ok}
+['n','p','m'].forEach(id=>document.getElementById(id).addEventListener('input',()=>document.getElementById(id).closest('.f').classList.remove('bad')));
+f.addEventListener('submit',ev=>{ev.preventDefault();
+ const a=chk('n',v=>v.length>1),b=chk('p',v=>/^[+\d][\d\s-]{8,14}$/.test(v)),c=chk('m',v=>v.length>4);
+ if(!(a&&b&&c)){const bad=f.querySelector('.bad input,.bad textarea');if(bad)bad.focus();return}
+ const sel=[...f.querySelectorAll('.chips input:checked')].map(x=>x.value).join(', ')||'Not specified';
+ const g=id=>document.getElementById(id).value.trim();
+ const data={Name:g('n'),Phone:g('p'),Email:g('e')||'Not given',Interested_in:sel,Message:g('m')};
+ if(g('e'))data.email=g('e');
+ se.hidden=true;btn.disabled=true;const t=btn.textContent;btn.textContent='Sending...';
+ drSend(data,'New enquiry from drevia website: '+g('n')).then(()=>{document.getElementById('fm').style.display='none';document.getElementById('ok').classList.add('show')})
+ .catch(()=>{se.hidden=false}).finally(()=>{btn.disabled=false;btn.textContent=t});});
+document.getElementById('again').onclick=()=>{f.reset();document.getElementById('fm').style.display='';document.getElementById('ok').classList.remove('show')};
+</script>
+</body></html>

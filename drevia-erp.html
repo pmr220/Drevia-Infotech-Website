@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Drevia ERP Software | Drevia Infotech, Amravati</title><meta name="description" content="Drevia ERP by Drevia Infotech: sales and billing, inventory and purchase, HR and payroll, MIS reports and data migration from Excel.">
+<meta name="theme-color" content="#070d33"><link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Lora:ital,wght@1,400;1,500&family=Syne:wght@600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Unbounded:wght@400;600;800&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Space+Grotesk:wght@400;500;700&family=Outfit:wght@400;500;600;800&family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@500;700;800&family=DM+Serif+Display&family=Sora:wght@500;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/base.css">
+<style>
+body.erp{--bg:#0a0f0d;--fg:#e8fff5;--acc:#34d399;--muted:rgba(232,255,245,.62);--line:rgba(52,211,153,.2);--disp:'Sora',sans-serif;--navbg:rgba(10,15,13,.85)}
+.erp #glow{--acc:#34d399}
+.erp::before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(52,211,153,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(52,211,153,.05) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(80% 60% at 50% 20%,#000,transparent);pointer-events:none;z-index:0}
+main{position:relative;z-index:1}
+.crumb{font-size:13px;color:var(--muted);margin-bottom:16px}.crumb a{color:var(--acc)}
+.eh{padding:calc(var(--ribbon) + var(--nav) + 60px) 0 70px}
+.eh h1{font-size:clamp(40px,7.6vw,112px);font-weight:800;letter-spacing:-.055em;line-height:.93;max-width:1000px}
+.eh p.lead{font-size:clamp(17px,2vw,21px);color:var(--muted);max-width:600px}
+.erp .btn.p{--btnbg:linear-gradient(135deg,#34d399,#06b6d4);color:#032015;box-shadow:0 14px 40px -14px #34d399}
+.erp .btn.g{border-color:var(--line);color:var(--fg)}
+.acts{display:flex;gap:12px;flex-wrap:wrap}
+.cons{margin-top:56px;border-radius:30px;border:1px solid var(--line);background:linear-gradient(180deg,#0e1713,#0a0f0d);overflow:hidden;box-shadow:0 60px 120px -60px #34d399}
+.cons .hd2{display:flex;align-items:center;gap:8px;padding:14px 20px;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}
+.cons .hd2 i{width:10px;height:10px;border-radius:50%;background:#34d399;opacity:.7}.cons .hd2 span{margin-left:10px}
+.cg{display:grid;grid-template-columns:200px 1fr;min-height:420px}
+.cg nav{border-right:1px solid var(--line);padding:16px;display:grid;gap:6px;align-content:start}
+.cg nav button{text-align:left;padding:11px 14px;border-radius:12px;border:0;background:transparent;color:var(--muted);cursor:pointer;font-size:14px;transition:.25s}
+.cg nav button:hover{color:#fff}.cg nav button.on{background:rgba(52,211,153,.16);color:var(--acc);font-weight:600}
+.cg .v{display:none;padding:26px;animation:vin .5s}.cg .v.on{display:block}@keyframes vin{from{opacity:0;transform:translateY(14px)}}
+.k4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:22px}
+.k4 div{padding:16px;border-radius:16px;background:rgba(52,211,153,.07);border:1px solid var(--line)}
+.k4 b{font-size:26px;display:block;letter-spacing:-.04em}.k4 small{color:var(--muted);font-size:12px}
+.bars{display:flex;gap:10px;align-items:flex-end;height:190px;padding:14px;border-radius:18px;border:1px solid var(--line)}
+.bars i{flex:1;border-radius:8px 8px 0 0;background:linear-gradient(180deg,#34d399,#06b6d4);height:0;transition:height 1.2s cubic-bezier(.2,.8,.2,1)}
+.v.on .bars i{height:var(--h)}
+.tb{width:100%;border-collapse:collapse;font-size:14px}.tb th{text-align:left;color:var(--muted);font-weight:500;font-size:12px;padding:8px}.tb td{padding:12px 8px;border-top:1px solid var(--line)}
+.tg{font-size:11.5px;padding:3px 10px;border-radius:99px;background:rgba(52,211,153,.16);color:#34d399;white-space:nowrap}.tg.o{background:rgba(251,191,36,.16);color:#fbbf24}.tg.r{background:rgba(248,113,113,.16);color:#f87171}
+.pipe{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.pipe div{padding:12px;border-radius:14px;border:1px solid var(--line);min-height:150px}.pipe h6{margin:0 0 10px;font-size:12px;color:var(--acc);font-family:'Poppins'}
+.pipe span{display:block;padding:9px 10px;border-radius:10px;background:rgba(255,255,255,.06);font-size:12px;margin-bottom:6px}
+.hd{font-size:clamp(30px,4.8vw,64px);font-weight:800;letter-spacing:-.045em;max-width:860px;line-height:1}
+.sub{color:var(--muted);max-width:620px;font-size:17px}
+.mods{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+.mod{padding:30px;border-radius:28px;border:1px solid var(--line);background:linear-gradient(160deg,rgba(52,211,153,.08),rgba(255,255,255,.01));transition:.35s;--spot:rgba(52,211,153,.2)}
+
+.mod:hover{transform:translateY(-8px);border-color:var(--acc)}
+.mod .e{width:54px;height:54px;border-radius:16px;background:rgba(52,211,153,.14);display:grid;place-items:center;font-size:26px;margin-bottom:18px}
+.mod h3{font-size:22px;margin-bottom:4px}.mod .t{color:var(--muted);font-size:14px;margin-bottom:14px;display:block}
+.mod ul{list-style:none;padding:0;margin:0;display:grid;gap:6px;font-size:13.5px;color:var(--muted)}.mod li::before{content:"↗";color:var(--acc);margin-right:8px}
+/* migration */
+.mig{display:grid;grid-template-columns:1fr 120px 1fr;gap:20px;align-items:center;margin-top:44px}
+.xl,.sy{padding:22px;border-radius:24px;border:1px solid var(--line);background:rgba(255,255,255,.03);min-height:240px}
+.xl{font-size:12px;font-family:'Space Grotesk',monospace}
+.xl .r{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:6px;padding:7px 4px;border-bottom:1px dashed rgba(255,255,255,.12);color:var(--muted)}
+.xl .r:first-child{color:#8bd8b5;font-weight:700}.xl .r span:nth-child(3){color:#f87171}
+.arrow{text-align:center;position:relative;height:60px}
+.arrow::before{content:"";position:absolute;left:0;right:0;top:50%;height:3px;background:repeating-linear-gradient(90deg,var(--acc) 0 10px,transparent 10px 20px);animation:ar 1s linear infinite}
+@keyframes ar{to{background-position:20px 0}}
+.arrow::after{content:"▶";position:absolute;right:-4px;top:50%;margin-top:-10px;color:var(--acc)}
+.sy .r{display:flex;justify-content:space-between;padding:10px 4px;border-bottom:1px solid var(--line);font-size:13.5px}
+.sy .r span:last-child{color:var(--acc)}
+.br{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:44px}
+.br div{padding:28px;border-radius:24px;border:1px solid var(--line);text-align:center}
+.br b{font-size:clamp(34px,4.6vw,58px);display:block;letter-spacing:-.04em;color:var(--acc)}.br span{color:var(--muted);font-size:14px}
+.end{margin-top:90px;border-radius:36px;padding:clamp(34px,6vw,80px);background:linear-gradient(135deg,#34d399,#06b6d4);color:#032015;text-align:center}
+.end h2{font-size:clamp(28px,4.8vw,62px);font-weight:800}.end .btn{background:#032015;color:#fff;box-shadow:none}
+@media (max-width:900px){.cg{grid-template-columns:1fr}.cg nav{border-right:0;border-bottom:1px solid var(--line);grid-auto-flow:column;overflow-x:auto}.cg nav button{white-space:nowrap}.k4{grid-template-columns:1fr 1fr}.pipe{grid-template-columns:1fr 1fr}.mods{grid-template-columns:1fr 1fr}.mig{grid-template-columns:1fr}.arrow{height:40px;transform:rotate(90deg);width:80px;margin:auto}.br{grid-template-columns:1fr}}
+@media (max-width:560px){.mods{grid-template-columns:1fr}}
+</style></head>
+<body class="erp loading">
+<div id="loader" aria-label="Loading Drevia Infotech">
+<div class="aur"></div><div class="panel t"></div><div class="panel b"></div><div class="lg-sweep"></div>
+<div class="core">
+ <div class="lg-mark"><svg viewBox="0 0 132 132"><defs><linearGradient id="lgg" x1="0" x2="1"><stop offset="0" stop-color="#5b8cff"/><stop offset=".6" stop-color="#b18cff"/><stop offset="1" stop-color="#5bffd1"/></linearGradient></defs><circle class="c1" cx="66" cy="66" r="60"/><circle class="c2" cx="66" cy="66" r="60"/></svg><img src="assets/logo-mark-white.svg" alt="Drevia Infotech logo"></div>
+ <div class="lg-name" data-lg><span class="ch" style="--k:0">D</span><span class="ch" style="--k:1">r</span><span class="ch" style="--k:2">e</span><span class="ch" style="--k:3">v</span><span class="ch" style="--k:4">i</span><span class="ch" style="--k:5">a</span> <em><span class="ch" style="--k:7">I</span><span class="ch" style="--k:8">n</span><span class="ch" style="--k:9">f</span><span class="ch" style="--k:10">o</span><span class="ch" style="--k:11">t</span><span class="ch" style="--k:12">e</span><span class="ch" style="--k:13">c</span><span class="ch" style="--k:14">h</span></em></div>
+ <div class="lg-tag">INNOVATING THE DIGITAL FUTURE</div>
+ <div class="lg-bar"><i></i></div><div class="lg-pct">0%</div>
+</div></div><div class="progress"></div><div id="glow"></div><header class="nav"><div class="wrap">
+<a class="brand" href="index.html" aria-label="Drevia Infotech home"><img src="assets/logo-mark.svg" alt="" class="lm"><div>Drevia <span>Infotech</span></div></a>
+<nav class="links" aria-label="Main"><a class="l" href="index.html">Home</a><a class="l" href="services.html">Our Services</a><a class="l" href="work.html">Our Work</a><a class="l" href="about.html">About</a><a class="l" href="contact.html">Contact</a>
+<div class="cta-wrap"><button class="cta" aria-haspopup="true" aria-expanded="false">Solutions <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+<div class="menu" role="menu"><a href="drevia-crm.html"><span class="ic" style="background:rgba(244,114,182,.18)">🎯</span><span><b>Drevia CRM</b><small>Leads, follow-ups and pipeline for every industry</small></span></a><a href="drevia-erp.html"><span class="ic" style="background:rgba(52,211,153,.18)">📊</span><span><b>Drevia ERP</b><small>Billing, stock, HR and reports in one system</small></span></a><a href="digiclasss.html"><span class="ic" style="background:rgba(45,212,191,.18)">🎓</span><span><b>DigiClasss</b><small>One app for institutes, teachers, students, parents</small></span></a><a href="readmynotes.html"><span class="ic" style="background:rgba(250,204,21,.18)">📚</span><span><b>ReadMyNotes</b><small>University-wise notes, papers and material</small></span></a><a class="all" href="solutions.html">See all solutions overview</a></div></div></nav>
+<button class="burger" aria-label="Open menu"><i></i><i></i><i></i></button></div></header>
+<div class="drawer" aria-label="Mobile menu"><a href="index.html">Home</a><a href="services.html">Our Services</a><a href="work.html">Our Work</a><a href="about.html">About</a><a href="contact.html">Contact</a><small>Solutions</small><a class="s" href="solutions.html">All solutions</a><a class="s" href="digiclasss.html">DigiClasss</a><a class="s" href="readmynotes.html">ReadMyNotes</a><a class="s" href="drevia-crm.html">Drevia CRM</a><a class="s" href="drevia-erp.html">Drevia ERP</a><a href="https://wa.me/917387570803" style="color:#7dffb0;font-size:18px;margin-top:20px">WhatsApp us: 73875 70803</a></div>
+<main>
+<section class="eh"><div class="wrap"><div class="crumb"><a href="solutions.html">Solutions</a> / Drevia ERP</div>
+<h1 data-split>One system to run your whole business.</h1>
+<p class="lead" data-r="up" style="--d:.6s">Sales, billing, stock, vendors, HR, payroll and branch-wise reports. Built around how your business works, with your Excel data moved in for you.</p>
+<div class="acts" data-r="up" style="--d:.8s"><a class="btn p" href="contact.html" data-mag>Plan my ERP</a><a class="btn g" href="services.html#erp" data-mag>See the service</a></div>
+<div class="cons" data-r="zoom" style="--d:.5s"><div class="hd2"><i></i><i></i><i></i><span>drevia-erp · overview</span></div>
+<div class="cg"><nav id="nv"><button class="on" data-v="0">Dashboard</button><button data-v="1">Sales and billing</button><button data-v="2">Inventory</button></nav>
+<div><div class="v on"><div class="k4"><div><b data-count="128">0</b><small>Invoices this month</small></div><div><b data-count="46">0</b><small>Pending orders</small></div><div><b data-count="312">0</b><small>Items in stock</small></div><div><b data-count="3">0</b><small>Branches</small></div></div><div class="bars"><i style="--h:40%"></i><i style="--h:58%"></i><i style="--h:46%"></i><i style="--h:72%"></i><i style="--h:64%"></i><i style="--h:88%"></i><i style="--h:78%"></i><i style="--h:95%"></i></div></div>
+<div class="v"><table class="tb"><tr><th>Invoice</th><th>Customer</th><th>Amount</th><th>Status</th></tr><tr><td>#1042</td><td>Sharma Traders</td><td>₹ 18,400</td><td><span class="tg">Paid</span></td></tr><tr><td>#1043</td><td>Patil Stores</td><td>₹ 9,250</td><td><span class="tg o">Due</span></td></tr><tr><td>#1044</td><td>Joshi &amp; Sons</td><td>₹ 27,900</td><td><span class="tg">Paid</span></td></tr><tr><td>#1045</td><td>Kulkarni Co.</td><td>₹ 6,100</td><td><span class="tg r">Overdue</span></td></tr></table></div>
+<div class="v"><table class="tb"><tr><th>Item</th><th>Branch</th><th>Stock</th><th>Status</th></tr><tr><td>Item A</td><td>Amravati</td><td>240</td><td><span class="tg">In stock</span></td></tr><tr><td>Item B</td><td>Nagpur</td><td>18</td><td><span class="tg o">Low</span></td></tr><tr><td>Item C</td><td>Amravati</td><td>0</td><td><span class="tg r">Reorder</span></td></tr><tr><td>Item D</td><td>Akola</td><td>96</td><td><span class="tg">In stock</span></td></tr></table></div>
+</div></div></div>
+<p style="font-size:12px;color:var(--muted);margin-top:10px">Sample data for illustration.</p></div></section>
+
+<section class="pad" style="padding-top:20px"><div class="wrap"><h2 class="hd" data-r="up">Four modules. Use all of them or only what you need.</h2>
+<div class="mods"><div class="mod spot" data-r="up"><div class="e">🧾</div><h3>Sales and billing</h3><span class="t">Quotes, invoices and payments</span><ul><li>Quotations</li><li>GST-ready invoices</li><li>Payment tracking</li></ul></div>
+<div class="mod spot" data-r="up" style="--d:.08s"><div class="e">📦</div><h3>Inventory and purchase</h3><span class="t">Stock, vendors and orders</span><ul><li>Live stock levels</li><li>Vendor management</li><li>Purchase orders</li></ul></div>
+
+<div class="mod spot" data-r="up"><div class="e">👥</div><h3>HR and payroll</h3><span class="t">Attendance, leave and salary</span><ul><li>Staff attendance</li><li>Leave management</li><li>Salary calculation</li></ul></div>
+<div class="mod spot" data-r="up" style="--d:.1s"><div class="e">📊</div><h3>MIS and data migration</h3><span class="t">Branch-wise reports, data moved from Excel</span><ul><li>Branch-wise reports</li><li>Management summaries</li><li>Excel data imported for you</li></ul></div></div></div></section>
+
+<section class="pad" style="padding-top:0"><div class="wrap"><h2 class="hd" data-r="up">Leaving Excel? We carry the data across.</h2><p class="sub" data-r="up">We clean and move your existing sheets into the new system, so you start with your real records.</p>
+<div class="mig" data-r="up"><div class="xl"><div class="r"><span>Customer</span><span>Amount</span><span>Dupes?</span></div><div class="r"><span>sharma traders</span><span>18400</span><span>yes</span></div><div class="r"><span>Sharma Traders</span><span>18,400</span><span>yes</span></div><div class="r"><span>Patil stores</span><span>9250</span><span></span></div><div class="r"><span>joshi &amp; sons</span><span>27900</span><span></span></div></div>
+<div class="arrow" aria-hidden="true"></div>
+<div class="sy"><div class="r"><span>Sharma Traders</span><span>₹ 18,400</span></div><div class="r"><span>Patil Stores</span><span>₹ 9,250</span></div><div class="r"><span>Joshi &amp; Sons</span><span>₹ 27,900</span></div><p style="font-size:13px;color:var(--acc);margin:14px 0 0">✓ Cleaned, de-duplicated and imported</p></div></div>
+
+<div class="br"><div data-r="up"><b data-count="1">0</b><span>system instead of many sheets and apps</span></div><div data-r="up"><b>All</b><span>your branches in one report</span></div><div data-r="up"><b>0</b><span>re-typing of your old data</span></div></div>
+<div class="end" data-r="zoom"><h2>Tell us how your business runs. We will build the system around it.</h2><p>Call us on 73875 70803</p><a class="btn p" href="contact.html" data-mag>Start a conversation</a></div></div></section>
+</main>
+<footer class="ft"><div class="wrap">
+<div class="fgrid"><div><a class="brand" href="index.html" style="color:#fff"><img src="assets/logo-mark-white.svg" alt=""><div>Drevia <span>Infotech</span></div></a>
+<p style="margin:16px 0 0;max-width:300px;color:#9fb0ee;font-size:14px">Software and digital growth, built around your business.<br>Based in Amravati, Maharashtra.</p></div>
+<div><h5>Pages</h5><a href="index.html">Home</a><a href="services.html">Our Services</a><a href="work.html">Our Work</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><div><h5>Solutions</h5><a href="solutions.html">Overview</a><a href="digiclasss.html">DigiClasss</a><a href="readmynotes.html">ReadMyNotes</a><a href="drevia-crm.html">Drevia CRM</a><a href="drevia-erp.html">Drevia ERP</a></div>
+<div><h5>Talk to us</h5><a href="tel:+917387570803">73875 70803</a><a href="https://wa.me/917387570803">WhatsApp</a><a href="contact.html">Send an enquiry</a><a href="contact.html#map">Amravati, India</a></div></div>
+<div class="big" aria-hidden="true">DREVIA</div>
+<div class="fbot"><span>© 2026 Drevia Infotech. Innovating the Digital Future.</span></div></div></footer>
+<div class="fab"><a class="wa" href="https://wa.me/917387570803" aria-label="WhatsApp Drevia Infotech"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.3L2 22l4.8-1.2A11 11 0 1 0 20.5 3.5zm-8.4 17a9 9 0 0 1-4.6-1.3l-.3-.2-2.8.7.8-2.7-.2-.3a9 9 0 1 1 7.1 3.8zm5-6.7c-.3-.1-1.6-.8-1.8-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.3 7.3 0 0 1-3.6-3.1c-.3-.5.3-.4.8-1.4a.5.5 0 0 0 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.800 11.800 0 0 0 4.500 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.6-.3z"/></svg></a>
+<a class="ph" href="tel:+917387570803" aria-label="Call Drevia Infotech"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.1 1 .4 1.900.7 2.800a2 2 0 0 1-.5 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.4c.9.3 1.800.6 2.800.7a2 2 0 0 1 1.700 2z"/></svg></a></div>
+<script src="js/main.js"></script>
+<script>
+const b=[...document.querySelectorAll('#nv button')],v=[...document.querySelectorAll('.cg .v')];
+b.forEach(x=>x.onclick=()=>{b.forEach(y=>y.classList.toggle('on',y===x));v.forEach((p,k)=>p.classList.toggle('on',k==x.dataset.v))});
+</script>
+</body></html>

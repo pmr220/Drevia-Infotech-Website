@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Our Solutions | Drevia Infotech, Amravati</title><meta name="description" content="Drevia CRM, Drevia ERP, DigiClasss and ReadMyNotes: ready solutions by Drevia Infotech, Amravati.">
+<meta name="theme-color" content="#070d33"><link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Lora:ital,wght@1,400;1,500&family=Syne:wght@600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Unbounded:wght@400;600;800&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Space+Grotesk:wght@400;500;700&family=Outfit:wght@400;500;600;800&family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@500;700;800&family=DM+Serif+Display&family=Sora:wght@500;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/base.css">
+<style>
+body.sol{--bg:#0a0613;--fg:#f4efff;--acc:#a78bfa;--muted:rgba(244,239,255,.62);--disp:'Syne',sans-serif}
+.sol .mesh{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.sol .mesh::before{content:"";position:absolute;inset:-50%;background:conic-gradient(from 0deg at 50% 50%,#2a0f6b,#0a0613,#0f3a6b,#0a0613,#4a0f6b,#0a0613,#2a0f6b);filter:blur(80px);opacity:.7;animation:rot 30s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+.sol .mesh::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(70% 70% at 50% 40%,#000,transparent)}
+.sl-h{padding:calc(var(--ribbon) + var(--nav) + 80px) 0 60px;position:relative;overflow:hidden}
+.sl-h h1{font-size:clamp(48px,10.5vw,170px);font-weight:800;letter-spacing:-.05em;line-height:.88;position:relative}
+.sl-h h1 .gr{display:block;background:linear-gradient(90deg,#a78bfa,#38bdf8,#34d399,#facc15);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:gr 8s linear infinite}
+@keyframes gr{to{background-position:300% 0}}
+.sl-h p{max-width:560px;font-size:clamp(16px,2vw,20px);color:var(--muted);position:relative}
+.accw{display:flex;gap:14px;height:min(640px,76vh)}
+.acc{position:relative;flex:1;border-radius:34px;overflow:hidden;background:linear-gradient(160deg,var(--cb),#0a0613);border:1px solid color-mix(in srgb,var(--c) 35%,transparent);transition:flex .7s cubic-bezier(.2,.8,.2,1),border-color .4s;display:block}
+.acc.on{flex:4.2}
+.acc::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:var(--c);filter:blur(120px);opacity:.15;right:-120px;top:-120px;transition:opacity .5s}
+.acc.on::before{opacity:.45}
+.acc .big-e{position:absolute;right:30px;top:24px;font-size:clamp(70px,9vw,130px);filter:drop-shadow(0 20px 30px rgba(0,0,0,.5));transition:transform .7s;animation:fl 6s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-14px) rotate(6deg)}}
+.acc .vt{position:absolute;left:50%;bottom:30px;transform:translateX(-50%) rotate(180deg);writing-mode:vertical-rl;font-family:var(--disp);font-size:28px;font-weight:800;color:var(--c);white-space:nowrap;transition:opacity .3s}
+.acc.on .vt{opacity:0}
+.acc .in{position:absolute;left:0;bottom:0;padding:34px;width:min(520px,100%);opacity:0;transform:translateY(30px);transition:.5s;pointer-events:none}
+.acc.on .in{opacity:1;transform:none;transition-delay:.25s;pointer-events:auto}
+.acc small{color:var(--c);font-weight:600;font-size:14px}
+.acc h3{font-size:clamp(34px,4.4vw,60px);font-weight:800;margin:6px 0 10px}
+.acc p{color:rgba(255,255,255,.75);font-size:16px}
+.acc .tg{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 22px}
+.acc .tg i{font-style:normal;font-size:12.5px;padding:5px 12px;border-radius:99px;border:1px solid color-mix(in srgb,var(--c) 50%,transparent);color:var(--c)}
+.acc .open{display:inline-block;padding:12px 22px;border-radius:99px;background:var(--c);color:#111;font-weight:700;font-size:14px}
+/* compare */
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.cmp>div{padding:34px;border-radius:30px;border:1px solid var(--line);background:rgba(255,255,255,.04);position:relative;overflow:hidden}
+.cmp h3{font-size:34px}
+.cmp .who{display:inline-block;padding:5px 14px;border-radius:99px;font-size:13px;font-weight:600;margin-bottom:16px}
+.cmp ul{padding:0;margin:18px 0 0;list-style:none;display:grid;gap:10px}
+.cmp li{padding-left:28px;position:relative;color:rgba(255,255,255,.8);font-size:15px}
+.cmp li::before{content:"✓";position:absolute;left:0;color:var(--k);font-weight:800}
+.hd{font-size:clamp(32px,5.2vw,70px);font-weight:800;max-width:800px}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.flow div{padding:26px;border:1px dashed rgba(255,255,255,.22);border-radius:22px;transition:.3s}
+.flow div:hover{border-style:solid;border-color:var(--acc);transform:translateY(-6px);background:rgba(167,139,250,.08)}
+.flow b{font-family:var(--disp);font-size:20px;display:block;margin-bottom:6px}
+.flow span{font-size:14px;color:var(--muted)}
+.custom{margin-top:90px;border-radius:34px;padding:clamp(30px,5vw,60px);background:linear-gradient(120deg,rgba(167,139,250,.2),rgba(56,189,248,.12));border:1px solid rgba(167,139,250,.35);display:flex;gap:30px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.custom h3{font-size:clamp(26px,3.6vw,44px);margin:0;max-width:640px}
+.sol .btn.p{--btnbg:linear-gradient(135deg,#8b5cf6,#38bdf8)}
+@media (max-width:900px){
+ .accw{flex-direction:column;height:auto}
+ .acc,.acc.on{flex:none;min-height:100px}.acc.on{min-height:430px}
+ .acc .vt{writing-mode:horizontal-tb;transform:none;left:24px;bottom:auto;top:34px;font-size:24px}
+ .acc .big-e{font-size:64px;top:14px;right:18px}.acc .in{padding:24px}
+ .cmp{grid-template-columns:1fr}.flow{grid-template-columns:1fr 1fr}
+}
+@media (max-width:520px){.flow{grid-template-columns:1fr}}
+</style></head>
+<body class="sol loading">
+<div id="loader" aria-label="Loading Drevia Infotech">
+<div class="aur"></div><div class="panel t"></div><div class="panel b"></div><div class="lg-sweep"></div>
+<div class="core">
+ <div class="lg-mark"><svg viewBox="0 0 132 132"><defs><linearGradient id="lgg" x1="0" x2="1"><stop offset="0" stop-color="#5b8cff"/><stop offset=".6" stop-color="#b18cff"/><stop offset="1" stop-color="#5bffd1"/></linearGradient></defs><circle class="c1" cx="66" cy="66" r="60"/><circle class="c2" cx="66" cy="66" r="60"/></svg><img src="assets/logo-mark-white.svg" alt="Drevia Infotech logo"></div>
+ <div class="lg-name" data-lg><span class="ch" style="--k:0">D</span><span class="ch" style="--k:1">r</span><span class="ch" style="--k:2">e</span><span class="ch" style="--k:3">v</span><span class="ch" style="--k:4">i</span><span class="ch" style="--k:5">a</span> <em><span class="ch" style="--k:7">I</span><span class="ch" style="--k:8">n</span><span class="ch" style="--k:9">f</span><span class="ch" style="--k:10">o</span><span class="ch" style="--k:11">t</span><span class="ch" style="--k:12">e</span><span class="ch" style="--k:13">c</span><span class="ch" style="--k:14">h</span></em></div>
+ <div class="lg-tag">INNOVATING THE DIGITAL FUTURE</div>
+ <div class="lg-bar"><i></i></div><div class="lg-pct">0%</div>
+</div></div><div class="progress"></div><div id="glow"></div><header class="nav"><div class="wrap">
+<a class="brand" href="index.html" aria-label="Drevia Infotech home"><img src="assets/logo-mark.svg" alt="" class="lm"><div>Drevia <span>Infotech</span></div></a>
+<nav class="links" aria-label="Main"><a class="l" href="index.html">Home</a><a class="l" href="services.html">Our Services</a><a class="l" href="work.html">Our Work</a><a class="l" href="about.html">About</a><a class="l" href="contact.html">Contact</a>
+<div class="cta-wrap"><button class="cta on" aria-haspopup="true" aria-expanded="false">Solutions <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+<div class="menu" role="menu"><a href="drevia-crm.html"><span class="ic" style="background:rgba(244,114,182,.18)">🎯</span><span><b>Drevia CRM</b><small>Leads, follow-ups and pipeline for every industry</small></span></a><a href="drevia-erp.html"><span class="ic" style="background:rgba(52,211,153,.18)">📊</span><span><b>Drevia ERP</b><small>Billing, stock, HR and reports in one system</small></span></a><a href="digiclasss.html"><span class="ic" style="background:rgba(45,212,191,.18)">🎓</span><span><b>DigiClasss</b><small>One app for institutes, teachers, students, parents</small></span></a><a href="readmynotes.html"><span class="ic" style="background:rgba(250,204,21,.18)">📚</span><span><b>ReadMyNotes</b><small>University-wise notes, papers and material</small></span></a><a class="all" href="solutions.html">See all solutions overview</a></div></div></nav>
+<button class="burger" aria-label="Open menu"><i></i><i></i><i></i></button></div></header>
+<div class="drawer" aria-label="Mobile menu"><a href="index.html">Home</a><a href="services.html">Our Services</a><a href="work.html">Our Work</a><a href="about.html">About</a><a href="contact.html">Contact</a><small>Solutions</small><a class="s" href="solutions.html">All solutions</a><a class="s" href="digiclasss.html">DigiClasss</a><a class="s" href="readmynotes.html">ReadMyNotes</a><a class="s" href="drevia-crm.html">Drevia CRM</a><a class="s" href="drevia-erp.html">Drevia ERP</a><a href="https://wa.me/917387570803" style="color:#7dffb0;font-size:18px;margin-top:20px">WhatsApp us: 73875 70803</a></div>
+<main>
+<section class="sl-h"><div class="mesh"></div><div class="wrap"><h1 data-split>Ready-made.</h1><h1 data-r="blur" style="--d:.5s"><span class="gr">Made yours.</span></h1>
+<p data-r="up" style="--d:.9s">Solutions we have already thought through. Pick one and we shape it around your business, your brand and your workflow. Open one from the Solutions menu above or tap a card.</p></div></section>
+<section style="padding-bottom:clamp(60px,9vw,120px)"><div class="wrap"><div class="accw" id="acc"><a class="acc on" href="drevia-crm.html" style="--c:#f472b6;--cb:#2a0a1c" data-r="up" data-d="3">
+<span class="big-e">🎯</span><div class="in"><small style="display:inline-block;background:var(--c);color:#1a0716;padding:3px 12px;border-radius:99px;margin-bottom:10px;font-weight:700">Featured solution</small><br><small>For sales teams in every industry</small><h3>Drevia CRM</h3><p>Capture leads, never miss a follow-up and see your pipeline.</p><div class="tg"><i>Leads</i><i>Follow-ups</i><i>Pipeline</i></div><span class="open">Open solution ↗</span></div><span class="vt">Drevia CRM</span></a><a class="acc" href="drevia-erp.html" style="--c:#34d399;--cb:#032a1a" data-r="up" data-d="3">
+<span class="big-e">📊</span><div class="in"><small>For growing businesses</small><h3>Drevia ERP</h3><p>Sales, billing, stock, HR and payroll with branch-wise reports.</p><div class="tg"><i>Billing</i><i>Inventory</i><i>HR and payroll</i></div><span class="open">Open solution ↗</span></div><span class="vt">Drevia ERP</span></a><a class="acc" href="digiclasss.html" style="--c:#2dd4bf;--cb:#032a2a" data-r="up" data-d="1">
+<span class="big-e">🎓</span><div class="in"><small>For institute owners</small><h3>DigiClasss</h3><p>Students, attendance, online tests, fees, notices and assignments in one app for owner, teachers, students and parents.</p><div class="tg"><i>Fees and reminders</i><i>Attendance</i><i>Online tests</i></div><span class="open">Open solution ↗</span></div><span class="vt">DigiClasss</span></a><a class="acc" href="readmynotes.html" style="--c:#facc15;--cb:#2a2503" data-r="up" data-d="2">
+<span class="big-e">📚</span><div class="in"><small>For university students</small><h3>ReadMyNotes</h3><p>Teachers upload notes, papers and material. Students find them by university and stream.</p><div class="tg"><i>University-wise</i><i>Stream-wise</i><i>Papers and notes</i></div><span class="open">Open solution ↗</span></div><span class="vt">ReadMyNotes</span></a></div></div></section>
+
+<section class="pad" style="padding-top:0"><div class="wrap">
+<h2 class="hd" data-r="up">DigiClasss and ReadMyNotes sound close. They are not the same product.</h2>
+<div class="cmp" style="margin-top:40px">
+<div data-r="left" style="--k:#2dd4bf"><span class="who" style="background:rgba(45,212,191,.16);color:#2dd4bf">For institute owners</span><h3>DigiClasss</h3><p class="muted">A private system for one institute. The owner decides who joins.</p><ul><li>Manage students, teachers and parents</li><li>Attendance, fees and fee reminders</li><li>Online tests and results</li><li>Assignments, notes and notices</li></ul><a class="btn g" href="digiclasss.html" style="margin-top:24px">Explore DigiClasss</a></div>
+<div data-r="right" style="--k:#facc15"><span class="who" style="background:rgba(250,204,21,.16);color:#facc15">For university students</span><h3>ReadMyNotes</h3><p class="muted">An open library of study material organised by university and stream.</p><ul><li>Teachers upload notes, papers and material</li><li>Students filter by university and stream</li><li>Find the right semester and subject fast</li><li>One place instead of scattered chats</li></ul><a class="btn g" href="readmynotes.html" style="margin-top:24px">Explore ReadMyNotes</a></div></div>
+<div class="custom" data-r="zoom"><h3>Need something none of these cover? We build it from your problem.</h3><a class="btn p" href="contact.html" data-mag>Tell us your idea</a></div></div></section>
+</main>
+<footer class="ft"><div class="wrap">
+<div class="fgrid"><div><a class="brand" href="index.html" style="color:#fff"><img src="assets/logo-mark-white.svg" alt=""><div>Drevia <span>Infotech</span></div></a>
+<p style="margin:16px 0 0;max-width:300px;color:#9fb0ee;font-size:14px">Software and digital growth, built around your business.<br>Based in Amravati, Maharashtra.</p></div>
+<div><h5>Pages</h5><a href="index.html">Home</a><a href="services.html">Our Services</a><a href="work.html">Our Work</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><div><h5>Solutions</h5><a href="solutions.html">Overview</a><a href="digiclasss.html">DigiClasss</a><a href="readmynotes.html">ReadMyNotes</a><a href="drevia-crm.html">Drevia CRM</a><a href="drevia-erp.html">Drevia ERP</a></div>
+<div><h5>Talk to us</h5><a href="tel:+917387570803">73875 70803</a><a href="https://wa.me/917387570803">WhatsApp</a><a href="contact.html">Send an enquiry</a><a href="contact.html#map">Amravati, India</a></div></div>
+<div class="big" aria-hidden="true">DREVIA</div>
+<div class="fbot"><span>© 2026 Drevia Infotech. Innovating the Digital Future.</span></div></div></footer>
+<div class="fab"><a class="wa" href="https://wa.me/917387570803" aria-label="WhatsApp Drevia Infotech"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.3L2 22l4.8-1.2A11 11 0 1 0 20.5 3.5zm-8.4 17a9 9 0 0 1-4.6-1.3l-.3-.2-2.8.7.8-2.7-.2-.3a9 9 0 1 1 7.1 3.8zm5-6.7c-.3-.1-1.6-.8-1.8-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.3 7.3 0 0 1-3.6-3.1c-.3-.5.3-.4.8-1.4a.5.5 0 0 0 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.800 11.800 0 0 0 4.500 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.6-.3z"/></svg></a>
+<a class="ph" href="tel:+917387570803" aria-label="Call Drevia Infotech"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.1 1 .4 1.900.7 2.800a2 2 0 0 1-.5 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.4c.9.3 1.800.6 2.800.7a2 2 0 0 1 1.700 2z"/></svg></a></div>
+<script src="js/main.js"></script>
+<script>
+const A=[...document.querySelectorAll('.acc')];
+A.forEach(a=>{
+ const on=()=>{A.forEach(x=>x.classList.toggle('on',x===a))};
+ a.addEventListener('mouseenter',()=>{if(matchMedia('(min-width:901px)').matches)on()});
+ a.addEventListener('focus',on);
+ a.addEventListener('click',e=>{if(!a.classList.contains('on')){e.preventDefault();on()}});
+});
+</script>
+</body></html>

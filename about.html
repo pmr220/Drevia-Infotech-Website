@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>About Us | Drevia Infotech, Amravati</title><meta name="description" content="How Drevia Infotech works: we understand, analyse, plan, discuss, build, test in 3 phases, deliver and support. Meet Parth Rathi and Shaurya Ugale.">
+<meta name="theme-color" content="#070d33"><link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Lora:ital,wght@1,400;1,500&family=Syne:wght@600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Unbounded:wght@400;600;800&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Space+Grotesk:wght@400;500;700&family=Outfit:wght@400;500;600;800&family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@500;700;800&family=DM+Serif+Display&family=Sora:wght@500;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/base.css">
+<style>
+body.about{--bg:#06070f;--fg:#f1f3ff;--acc:#38e1c6;--acc2:#7fe9d6;--muted:rgba(241,243,255,.65);--disp:'Fraunces',serif}
+.about #glow{--acc:#38e1c6}
+.ab-h{min-height:92vh;display:flex;align-items:center;padding:calc(var(--ribbon) + var(--nav) + 30px) 0 50px;position:relative;overflow:hidden}
+.ab-h::before{content:"";position:absolute;width:60vw;height:60vw;left:50%;top:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(56,225,198,.2),transparent 62%);animation:br 6s ease-in-out infinite alternate}
+@keyframes br{to{transform:translate(-50%,-50%) scale(1.25)}}
+.ab-h h1{font-size:clamp(44px,9vw,138px);font-weight:700;letter-spacing:-.045em;line-height:.95;position:relative}
+.ab-h h1 em{font-style:italic;font-weight:500;color:var(--acc)}
+.ab-h p{max-width:600px;font-size:clamp(17px,2vw,21px);color:var(--muted);position:relative}
+.loc{display:inline-flex;gap:10px;align-items:center;margin-top:10px;padding:9px 18px;border-radius:99px;border:1px solid rgba(56,225,198,.4);color:var(--acc2);font-size:14px;position:relative}
+.loc::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 0 var(--acc);animation:rp 2s infinite}
+@keyframes rp{to{box-shadow:0 0 0 14px transparent}}
+.beliefs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:60px;position:relative}
+.beliefs div{padding:24px;border-radius:22px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+.beliefs b{font-family:var(--disp);font-size:22px;display:block;margin-bottom:6px}.beliefs span{font-size:14px;color:var(--muted)}
+/* timeline */
+.th{text-align:center;max-width:720px;margin:0 auto 70px}
+.th h2{font-size:clamp(34px,5.4vw,72px);font-weight:700}
+.th p{color:var(--muted)}
+.tl{position:relative;max-width:1100px;margin:auto;padding:20px 0}
+.tl .spine{position:absolute;left:50%;top:0;bottom:0;width:3px;margin-left:-1.5px;background:rgba(255,255,255,.1);border-radius:3px}
+.tl .fill{position:absolute;left:0;top:0;width:100%;height:0;border-radius:3px;background:linear-gradient(180deg,#38e1c6,#6f8bff,#c084fc);box-shadow:0 0 20px #38e1c6}
+.st{position:relative;display:flex;margin-bottom:46px}
+.st.L{justify-content:flex-start}.st.R{justify-content:flex-end}
+.st .card{width:calc(50% - 56px);padding:28px;border-radius:26px;background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid var(--line);--spot:rgba(56,225,198,.2)}
+.st .card h3{font-size:clamp(20px,2.4vw,28px);font-weight:700;margin:12px 0 8px;letter-spacing:-.02em}
+.st .card p{color:var(--muted);font-size:15px;margin:0}
+.st .n{position:absolute;right:20px;top:14px;font-family:var(--disp);font-size:54px;font-weight:700;color:rgba(255,255,255,.07)}
+.st .em{font-size:30px;width:56px;height:56px;border-radius:18px;display:grid;place-items:center;background:rgba(56,225,198,.12);border:1px solid rgba(56,225,198,.35)}
+.st .dot{position:absolute;left:50%;top:34px;width:28px;height:28px;margin-left:-14px;border-radius:50%;background:#06070f;border:3px solid rgba(255,255,255,.2);display:grid;place-items:center;z-index:2;transition:.5s}
+.st .dot i{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.2);transition:.5s}
+.st.act .dot{border-color:#38e1c6;box-shadow:0 0 0 8px rgba(56,225,198,.15),0 0 30px #38e1c6}.st.act .dot i{background:#38e1c6}
+.st::after{content:"";position:absolute;top:47px;height:2px;width:42px;background:rgba(255,255,255,.2);transition:.5s}
+.st.L::after{left:calc(50% - 56px)}.st.R::after{right:calc(50% - 56px)}
+.st.act::after{background:#38e1c6}
+.ph3{display:flex;gap:8px;margin-top:16px}
+.ph3 i{flex:1;font-style:normal;text-align:center;padding:10px 6px;border-radius:12px;background:rgba(56,225,198,.1);border:1px solid rgba(56,225,198,.3);font-weight:600;font-size:13px}
+.ph3 small{font-weight:400;opacity:.7}
+/* experts */
+.exp h2{font-size:clamp(34px,5.4vw,72px);font-weight:700;text-align:center}
+.team{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:50px}
+.pc{padding:36px;border-radius:34px;background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid var(--line);text-align:center;position:relative;overflow:hidden}
+.av{position:relative;width:150px;height:150px;margin:0 auto 24px;display:grid;place-items:center}
+.av::before{content:"";position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,#38e1c6,#6f8bff,#c084fc,#38e1c6);animation:spin 6s linear infinite}
+.av::after{content:"";position:absolute;inset:4px;border-radius:50%;background:#0b0e1c}
+@keyframes spin{to{transform:rotate(360deg)}}
+.av span{position:relative;z-index:2;font-family:var(--disp);font-size:50px;font-weight:700;background:linear-gradient(135deg,#38e1c6,#c084fc);-webkit-background-clip:text;background-clip:text;color:transparent}
+.pc h3{font-size:clamp(28px,3.4vw,40px);margin-bottom:4px}
+.pc .role{color:var(--acc2);font-weight:500;margin-bottom:18px;display:block}
+.pc .sk{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:22px}
+.pc .sk i{font-style:normal;font-size:13px;padding:6px 14px;border-radius:99px;border:1px solid var(--line);color:var(--muted)}
+.about .btn.p{--btnbg:linear-gradient(135deg,#14b8a6,#6f8bff)}
+@media (max-width:860px){
+ .beliefs,.team{grid-template-columns:1fr}
+ .tl .spine{left:22px}.st .dot{left:22px}
+ .st.L,.st.R{justify-content:flex-end}
+ .st .card{width:calc(100% - 60px)}
+ .st.L::after{left:36px}.st.R::after{right:auto;left:36px}.st::after{width:18px}
+ [data-r=left]{transform:translateX(60px)}
+}
+</style></head>
+<body class="about loading">
+<div id="loader" aria-label="Loading Drevia Infotech">
+<div class="aur"></div><div class="panel t"></div><div class="panel b"></div><div class="lg-sweep"></div>
+<div class="core">
+ <div class="lg-mark"><svg viewBox="0 0 132 132"><defs><linearGradient id="lgg" x1="0" x2="1"><stop offset="0" stop-color="#5b8cff"/><stop offset=".6" stop-color="#b18cff"/><stop offset="1" stop-color="#5bffd1"/></linearGradient></defs><circle class="c1" cx="66" cy="66" r="60"/><circle class="c2" cx="66" cy="66" r="60"/></svg><img src="assets/logo-mark-white.svg" alt="Drevia Infotech logo"></div>
+ <div class="lg-name" data-lg><span class="ch" style="--k:0">D</span><span class="ch" style="--k:1">r</span><span class="ch" style="--k:2">e</span><span class="ch" style="--k:3">v</span><span class="ch" style="--k:4">i</span><span class="ch" style="--k:5">a</span> <em><span class="ch" style="--k:7">I</span><span class="ch" style="--k:8">n</span><span class="ch" style="--k:9">f</span><span class="ch" style="--k:10">o</span><span class="ch" style="--k:11">t</span><span class="ch" style="--k:12">e</span><span class="ch" style="--k:13">c</span><span class="ch" style="--k:14">h</span></em></div>
+ <div class="lg-tag">INNOVATING THE DIGITAL FUTURE</div>
+ <div class="lg-bar"><i></i></div><div class="lg-pct">0%</div>
+</div></div><div class="progress"></div><div id="glow"></div><header class="nav"><div class="wrap">
+<a class="brand" href="index.html" aria-label="Drevia Infotech home"><img src="assets/logo-mark.svg" alt="" class="lm"><div>Drevia <span>Infotech</span></div></a>
+<nav class="links" aria-label="Main"><a class="l" href="index.html">Home</a><a class="l" href="services.html">Our Services</a><a class="l" href="work.html">Our Work</a><a class="l on" href="about.html">About</a><a class="l" href="contact.html">Contact</a>
+<div class="cta-wrap"><button class="cta" aria-haspopup="true" aria-expanded="false">Solutions <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+<div class="menu" role="menu"><a href="drevia-crm.html"><span class="ic" style="background:rgba(244,114,182,.18)">🎯</span><span><b>Drevia CRM</b><small>Leads, follow-ups and pipeline for every industry</small></span></a><a href="drevia-erp.html"><span class="ic" style="background:rgba(52,211,153,.18)">📊</span><span><b>Drevia ERP</b><small>Billing, stock, HR and reports in one system</small></span></a><a href="digiclasss.html"><span class="ic" style="background:rgba(45,212,191,.18)">🎓</span><span><b>DigiClasss</b><small>One app for institutes, teachers, students, parents</small></span></a><a href="readmynotes.html"><span class="ic" style="background:rgba(250,204,21,.18)">📚</span><span><b>ReadMyNotes</b><small>University-wise notes, papers and material</small></span></a><a class="all" href="solutions.html">See all solutions overview</a></div></div></nav>
+<button class="burger" aria-label="Open menu"><i></i><i></i><i></i></button></div></header>
+<div class="drawer" aria-label="Mobile menu"><a href="index.html">Home</a><a href="services.html">Our Services</a><a href="work.html">Our Work</a><a href="about.html">About</a><a href="contact.html">Contact</a><small>Solutions</small><a class="s" href="solutions.html">All solutions</a><a class="s" href="digiclasss.html">DigiClasss</a><a class="s" href="readmynotes.html">ReadMyNotes</a><a class="s" href="drevia-crm.html">Drevia CRM</a><a class="s" href="drevia-erp.html">Drevia ERP</a><a href="https://wa.me/917387570803" style="color:#7dffb0;font-size:18px;margin-top:20px">WhatsApp us: 73875 70803</a></div>
+<main>
+<section class="ab-h"><div class="wrap"><h1 data-split>Developers who first listen.</h1>
+<p data-r="blur" style="--d:.7s">Drevia Infotech is an information technology company. We do not start with technology. We start with the problem your business has today and work toward software that removes it.</p>
+<span class="loc" data-r="up" style="--d:.9s">Based in Amravati, Maharashtra</span>
+<div class="beliefs"><div data-r="up"><b>Understand first</b><span>Your pain point decides the product, not our favourite tools.</span></div><div data-r="up" style="--d:.1s"><b>Build in the open</b><span>You review the work while it is being made.</span></div><div data-r="up" style="--d:.2s"><b>Stay after launch</b><span>Delivery is the middle of the relationship, not the end.</span></div></div></div></section>
+
+<section class="pad"><div class="wrap"><div class="th"><h2 data-r="up">How we work, from first call to after-service.</h2><p data-r="up" style="--d:.1s">Ten steps, in this order, every time.</p></div>
+<div class="tl" id="tl"><div class="spine"><div class="fill" id="fill"></div></div><div class="st L"><div class="card spot" data-r="left"><span class="n">01</span><div class="em">🧠</div><h3>We understand the pain points of your business</h3><p>Before any screen or code, we sit with you and learn what slows you down, what costs you money and what your customers complain about.</p></div><div class="dot"><i></i></div></div><div class="st R"><div class="card spot" data-r="right"><span class="n">02</span><div class="em">🔍</div><h3>We analyse</h3><p>We study your workflow, your users and the tools you use today to find the real problem under the visible one.</p></div><div class="dot"><i></i></div></div><div class="st L"><div class="card spot" data-r="left"><span class="n">03</span><div class="em">🗺️</div><h3>We make a plan</h3><p>A clear plan with scope, screens, features and timeline, written in plain language you can read in one sitting.</p></div><div class="dot"><i></i></div></div><div class="st R"><div class="card spot" data-r="right"><span class="n">04</span><div class="em">💬</div><h3>We discuss it with you</h3><p>We walk you through the plan and change it until it feels right to you. Nothing is built before you agree.</p></div><div class="dot"><i></i></div></div><div class="st L"><div class="card spot" data-r="left"><span class="n">05</span><div class="em">➕</div><h3>We take additional requirements</h3><p>Ideas come after you see the plan. We collect every extra requirement now, so it is designed in rather than patched on.</p></div><div class="dot"><i></i></div></div><div class="st R"><div class="card spot" data-r="right"><span class="n">06</span><div class="em">⚙️</div><h3>We make it</h3><p>Our team builds the product with clean, maintainable code, the way it was planned.</p></div><div class="dot"><i></i></div></div><div class="st L"><div class="card spot" data-r="left"><span class="n">07</span><div class="em">👀</div><h3>We take reviews while making</h3><p>You see work in progress and give feedback during the build, not after it. Course corrections are cheap early.</p></div><div class="dot"><i></i></div></div><div class="st R"><div class="card spot" data-r="right"><span class="n">08</span><div class="em">🧪</div><h3>We test it in 3 phases</h3><p>Phase one tests each feature by itself. Phase two tests the whole product working together. Phase three is a real-world trial before launch.</p><div class="ph3"><i>Phase 1<br><small>Features</small></i><i>Phase 2<br><small>Together</small></i><i>Phase 3<br><small>Real world</small></i></div></div><div class="dot"><i></i></div></div><div class="st L"><div class="card spot" data-r="left"><span class="n">09</span><div class="em">🚀</div><h3>We deliver it</h3><p>We launch, hand over everything you need and make sure your team knows how to use it.</p></div><div class="dot"><i></i></div></div><div class="st R"><div class="card spot" data-r="right"><span class="n">10</span><div class="em">🤝</div><h3>We give additional support and after-service</h3><p>We stay available after launch for fixes, questions and the next improvement.</p></div><div class="dot"><i></i></div></div></div></div></section>
+
+<section class="pad exp" style="padding-top:0"><div class="wrap"><h2 data-r="up">Meet our experts</h2>
+<div class="team">
+<div class="pc" data-r="left" data-tilt="5"><div class="av"><span>PR</span></div><h3>Parth Rathi</h3><span class="role">Lead Solution Architect and Lead Developer</span>
+<div class="sk"><i>Solution design</i><i>Mobile apps</i><i>ERP and CRM</i><i>Full-stack development</i></div>
+<a class="btn p" href="tel:+917387570803" data-mag>Call 73875 70803</a></div>
+<div class="pc" data-r="right" data-tilt="5"><div class="av"><span>SU</span></div><h3>Shaurya Ugale</h3><span class="role">Sales Lead</span>
+<div class="sk"><i>Understanding client needs</i><i>Proposals</i><i>Client relationships</i></div>
+<a class="btn p" href="contact.html" data-mag>Send an enquiry</a></div></div></div></section>
+</main>
+<footer class="ft"><div class="wrap">
+<div class="fgrid"><div><a class="brand" href="index.html" style="color:#fff"><img src="assets/logo-mark-white.svg" alt=""><div>Drevia <span>Infotech</span></div></a>
+<p style="margin:16px 0 0;max-width:300px;color:#9fb0ee;font-size:14px">Software and digital growth, built around your business.<br>Based in Amravati, Maharashtra.</p></div>
+<div><h5>Pages</h5><a href="index.html">Home</a><a href="services.html">Our Services</a><a href="work.html">Our Work</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><div><h5>Solutions</h5><a href="solutions.html">Overview</a><a href="digiclasss.html">DigiClasss</a><a href="readmynotes.html">ReadMyNotes</a><a href="drevia-crm.html">Drevia CRM</a><a href="drevia-erp.html">Drevia ERP</a></div>
+<div><h5>Talk to us</h5><a href="tel:+917387570803">73875 70803</a><a href="https://wa.me/917387570803">WhatsApp</a><a href="contact.html">Send an enquiry</a><a href="contact.html#map">Amravati, India</a></div></div>
+<div class="big" aria-hidden="true">DREVIA</div>
+<div class="fbot"><span>© 2026 Drevia Infotech. Innovating the Digital Future.</span></div></div></footer>
+<div class="fab"><a class="wa" href="https://wa.me/917387570803" aria-label="WhatsApp Drevia Infotech"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.3L2 22l4.8-1.2A11 11 0 1 0 20.5 3.5zm-8.4 17a9 9 0 0 1-4.6-1.3l-.3-.2-2.8.7.8-2.7-.2-.3a9 9 0 1 1 7.1 3.8zm5-6.7c-.3-.1-1.6-.8-1.8-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.3 7.3 0 0 1-3.6-3.1c-.3-.5.3-.4.8-1.4a.5.5 0 0 0 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.800 11.800 0 0 0 4.500 4c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.6-.3z"/></svg></a>
+<a class="ph" href="tel:+917387570803" aria-label="Call Drevia Infotech"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.1 1 .4 1.900.7 2.800a2 2 0 0 1-.5 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.4c.9.3 1.800.6 2.800.7a2 2 0 0 1 1.700 2z"/></svg></a></div>
+<script src="js/main.js"></script>
+<script>
+const tl=document.getElementById('tl'),fill=document.getElementById('fill'),steps=[...document.querySelectorAll('.st')];
+function up(){const r=tl.getBoundingClientRect(),mid=innerHeight*.55;
+ const p=Math.max(0,Math.min(1,(mid-r.top)/r.height));fill.style.height=p*100+'%';
+ steps.forEach(s=>{const d=s.querySelector('.dot').getBoundingClientRect();s.classList.toggle('act',d.top<mid)})}
+addEventListener('scroll',up,{passive:true});addEventListener('resize',up);up();
+</script>
+</body></html>
