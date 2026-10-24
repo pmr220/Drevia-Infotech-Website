@@ -1,6 +1,47 @@
+
 (function(){
 const $=(s,c=document)=>c.querySelector(s),$$=(s,c=document)=>[...c.querySelectorAll(s)];
 const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+/* iOS-only loader polish. Desktop and Android use the original behavior. */
+const isIOS=/iPad|iPhone|iPod/i.test(navigator.userAgent) ||
+  (navigator.platform==='MacIntel' && navigator.maxTouchPoints>1);
+if(isIOS){
+  const iosStyle=document.createElement('style');
+  iosStyle.id='drevia-ios-loader-fix';
+  iosStyle.textContent=`
+    #loader .lg-mark img {
+      filter:none !important;
+      -webkit-filter:none !important;
+      animation:dreviaIOSLogoIn .42s ease-out both !important;
+    }
+    @keyframes dreviaIOSLogoIn {
+      from { opacity:0; transform:scale(.90); }
+      to   { opacity:1; transform:none; }
+    }
+    #loader .panel {
+      transition:transform .48s cubic-bezier(.8,0,.15,1) 0s !important;
+    }
+    #loader .core {
+      transition:opacity .24s ease, transform .35s ease !important;
+    }
+    #loader .lg-mark .c2 {
+      animation:ring .65s 0s ease-out forwards !important;
+    }
+    #loader .lg-name span.ch {
+      --base:0ms;
+      transition-duration:.32s !important;
+      transition-delay:calc(var(--k) * 9ms) !important;
+    }
+    #loader .lg-tag {
+      animation:fade .30s .12s both !important;
+    }
+    #loader .lg-sweep {
+      animation:sw .65s .05s ease-out forwards !important;
+    }
+  `;
+  document.head.appendChild(iosStyle);
+}
 
 /* split text into animated chars */
 function split(el){
@@ -20,13 +61,13 @@ const seen=sessionStorage.getItem('drv');
 function finish(){
   document.body.classList.remove('loading');
   L.classList.add('go');
-  setTimeout(()=>{L.remove();document.dispatchEvent(new Event('drevia:ready'))},1300);
+  setTimeout(()=>{L.remove();document.dispatchEvent(new Event('drevia:ready'))},isIOS?550:1300);
   sessionStorage.setItem('drv','1');
 }
 if(L){
   document.body.classList.add('loading');
   const bar=$('.lg-bar i',L),pct=$('.lg-pct',L);
-  const dur=reduce?200:(seen?1100:2900);
+  const dur=reduce?200:(isIOS?(seen?280:750):(seen?1100:2900));
   const t0=performance.now();
   (function tick(n){
     const p=Math.min(1,(n-t0)/dur),e=1-Math.pow(1-p,3);
@@ -74,7 +115,8 @@ if(!reduce&&matchMedia('(hover:hover)').matches){
     el.addEventListener('pointerleave',()=>el.style.transform='');
   });
   $$('[data-mag]').forEach(el=>{
-    el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect();el.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.25}px,${(e.clientY-r.top-r.height/2)*.35}px)`});
+    el.addEventListener('pointermove',e=>{
+      const r=el.getBoundingClientRect();el.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.25}px,${(e.clientY-r.top-r.height/2)*.35}px)`});
     el.addEventListener('pointerleave',()=>el.style.transform='');
   });
 }
